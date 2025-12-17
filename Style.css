@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background: #0f1115;
+  color: #e7eaee;
+  font-family: system-ui, sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: #171a21;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,.35);
+}
+
+.card-header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #2a3142;
+}
+
+h1 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+p {
+  margin: 4px 0;
+}
+
+.info {
+  margin: 16px 0;
+}
+
+.qr-block {
+  margin-top: 10px;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+}
+
+#qrcode canvas, #qrcode img {
+  width: 160px;
+  height: 160px;
+}
