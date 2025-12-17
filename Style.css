@@ -1,58 +1,69 @@
 body {
   margin: 0;
-  background: #0f1115;
-  color: #e7eaee;
   font-family: system-ui, sans-serif;
-  display: grid;
-  place-items: center;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
 }
 
 .card {
-  width: 100%;
-  max-width: 400px;
-  background: #171a21;
-  border-radius: 16px;
+  background: #fff;
+  border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 10px 40px rgba(0,0,0,.35);
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,.1);
+  text-align: center;
 }
 
-.card-header {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  margin-bottom: 14px;
-}
-
-.logo {
-  width: 56px;
-  height: 56px;
-  border-radius: 10px;
+.perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   object-fit: cover;
-  border: 1px solid #2a3142;
+  margin-bottom: 12px;
 }
 
-h1 {
-  font-size: 1.25rem;
+.nombre {
   margin: 0;
+  font-size: 1.4rem;
+  color: #333;
 }
 
-p {
+.compania {
   margin: 4px 0;
+  font-size: 1.1rem;
+  color: #555;
 }
 
-.info {
-  margin: 16px 0;
+.descripcion {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 12px 0;
 }
 
-.qr-block {
-  margin-top: 10px;
-  display: grid;
-  place-items: center;
-  gap: 8px;
+.telefono a, .web a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-#qrcode canvas, #qrcode img {
-  width: 160px;
-  height: 160px;
+.social {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.social img:hover {
+  transform: scale(1.1);
 }
