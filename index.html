@@ -3,32 +3,42 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tarjeta de Presentación</title>
+  <title>Tarjeta Digital</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <section class="card">
-    <div class="card-header">
-      <img src="logo.png" alt="Logo" class="logo" />
-      <div>
-        <h1>Néstor</h1>
-        <p>Roofing Restoration • Calhoun, GA</p>
-      </div>
-    </div>
+    <!-- Foto de perfil -->
+    <img src="img/perfil.jpg" alt="Foto de perfil" class="perfil" />
 
-    <div class="info">
-      <p><strong>Email:</strong> contacto@tu-dominio.com</p>
-      <p><strong>Teléfono:</strong> +1 706 555 1234</p>
-      <p><strong>Sitio web:</strong> tu-dominio.com</p>
-    </div>
+    <!-- Nombre y compañía -->
+    <h1 class="nombre">Néstor</h1>
+    <h2 class="compania">Roofing Restoration</h2>
 
-    <div class="qr-block">
-      <div id="qrcode"></div>
-      <p>Escanea para ver más</p>
+    <!-- Breve descripción -->
+    <p class="descripcion">
+      Especialistas en restauración de techos y gestión de reclamaciones de seguro en Calhoun, GA.
+    </p>
+
+    <!-- Teléfono clicable -->
+    <p class="telefono">
+      📞 <a href="tel:+17065551234">+1 (706) 555-1234</a>
+    </p>
+
+    <!-- Dirección web clicable -->
+    <p class="web">
+      🌐 <a href="https://tu-dominio.com" target="_blank">tu-dominio.com</a>
+    </p>
+
+    <!-- Íconos sociales -->
+    <div class="social">
+      <a href="https://wa.me/17065551234" target="_blank">
+        <img src="img/whatsapp.png" alt="WhatsApp" />
+      </a>
+      <a href="https://facebook.com/tuempresa" target="_blank">
+        <img src="img/facebook.png" alt="Facebook" />
+      </a>
     </div>
   </section>
-
-  <script src="qrcode.min.js"></script>
-  <script src="app.js"></script>
 </body>
 </html>
